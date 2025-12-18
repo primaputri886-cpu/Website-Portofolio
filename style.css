@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  color: #222;
+}
+
+/* NAVBAR */
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 10;
+}
+
+.header.small {
+  position: relative;
+  background: #0f2f24;
+}
+
+.nav-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.55)
+    ),
+    url("hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 700px;
+}
+
+.hero-content h2 {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  margin: 15px 0;
+}
+
+.hero-content p {
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #f4a236;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 25px;
+  width: 90%;
+  margin: -80px auto 80px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* CONTENT */
+.content {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.skill-list li {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #0f2f24;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
